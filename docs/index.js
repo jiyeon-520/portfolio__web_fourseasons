@@ -15,7 +15,25 @@ $(".filter").mouseleave(function () {
     $(".filter").removeClass("active-1");
   } 
 });
+//스와이퍼 
+new Swiper('.swiper');
+function SliderBoxx__init() {
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    loop:true,loopAdditionalSlides: 1,
+     autoplay: {
+      delay: 8000,
+      disableOnInteraction: false,
+    },
+    effect: "slide",
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+  });
+}
 
+SliderBoxx__init();
 console.clear();
 $(".box-count").each(function (index, node) {
   const $boxCount = $(node);
@@ -263,7 +281,13 @@ $(function () {
 
 function SwiperBox1__init() {
   const swiper = new Swiper('.swiper-box-1 .swiper', {
-    loop: true,
+    slidesPerView: 1,
+    loop:true,
+     autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    effect: "slide",
     navigation: {
       nextEl: '.swiper-box-1 .swiper-button-next',
       prevEl: '.swiper-box-1 .swiper-button-prev',
@@ -277,7 +301,13 @@ SwiperBox1__init();
 
 function SwiperBox2__init() {
   const swiper = new Swiper('.swiper-box-2 .swiper', {
-    loop: true,
+    slidesPerView: 1,
+    loop:true,
+     autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    effect: "slide",
     navigation: {
       nextEl: '.button-container .next',
       prevEl: '.button-container .prev',
