@@ -112,6 +112,7 @@
 .menu>ul ul li>a {
   padding: 5px 0;
   line-height: 22px;
+  cursor:pointer;
 }
 
 .menu>ul ul li:hover>a {
@@ -201,7 +202,7 @@
 
 /* 슬라이더 1 */
 .slider-1__slides>div {
-  height: 950px;
+  height: 1000px;
 }
 
 .slider-1__slide-1 {
@@ -516,7 +517,7 @@ table {
 .horizontal-collapse__inactive-content .horizontal-collapse__heading {
   user-select: none;
   cursor: default;
-  font-size: 2.2em;
+  font-size: 36px;
   line-height: 0;
   margin-bottom: -100px;
   margin-left: 40px;
@@ -534,7 +535,7 @@ table {
 .horizontal-collapse__heading {
   margin-top: 0;
   margin-bottom: 0.4em;
-  font-size: 2.2em;
+  font-size: 36px;
 }
 
 /* 자세히 버튼 */
@@ -643,19 +644,22 @@ table {
 
 /*main-5*/
 .swiper-box-2 {
-  margin-left: auto;
-  margin-right: 320px;
-  width: 850px;
-  height: 550px;
-  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  height:660px;
+  position:relative;
   --swiper-navigation-color: gray;
   --swiper-navigation-size: 1rem;
 }
 
-.swiper-box-2 .swiper {
-  height: 550px;
+.swiper-box-2 .swiper2 {
+  height:660px;
+}
+.swiper-box-2 .swiper-slide {
+  transform: scale(.73);
+  transition: transform .25s;
 }
 
-.swiper-box-2 :is(.swiper-button-next, .swiper-button-prev) {
-  top: 120%;
+.swiper-box-2 .swiper-slide-active {
+  transform: scale(.97);
 }

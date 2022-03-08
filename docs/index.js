@@ -281,7 +281,7 @@ $(function () {
 
 function SwiperBox1__init() {
   const swiper = new Swiper('.swiper-box-1 .swiper', {
-    slidesPerView: 1,
+    slidesPerView: 1,loopAdditionalSlides: 1,
     loop:true,
      autoplay: {
       delay: 6000,
@@ -300,8 +300,10 @@ SwiperBox1__init();
 
 
 function SwiperBox2__init() {
-  const swiper = new Swiper('.swiper-box-2 .swiper', {
-    slidesPerView: 1,
+  const swiper = new Swiper('.swiper-box-2 .swiper2', {
+    slidesPerView:2.4,
+    spaceBetween:80,
+    centeredSlides: true,
     loop:true,
      autoplay: {
       delay: 6000,
@@ -309,8 +311,8 @@ function SwiperBox2__init() {
     },
     effect: "slide",
     navigation: {
-      nextEl: '.button-container .next',
-      prevEl: '.button-container .prev',
+      nextEl: '.next2',
+      prevEl: '.prev2',
     },
   });
 }
