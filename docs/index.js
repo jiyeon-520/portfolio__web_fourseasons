@@ -15,6 +15,7 @@ $(".filter").mouseleave(function () {
     $(".filter").removeClass("active-1");
   } 
 });
+
 //스와이퍼 
 new Swiper('.swiper');
 function SliderBoxx__init() {
