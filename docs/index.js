@@ -1,3 +1,7 @@
+$('body').imagesLoaded(function() {
+  $('.loading').remove();
+});
+
 $(".filter").mouseenter(function () {
   let ff = $(".filter").hasClass("active-1");
   if (ff) {

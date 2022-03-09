@@ -11,6 +11,11 @@
 .con {
   width: 1920px;
 }
+@media (min-width:1900px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 .section-group {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;

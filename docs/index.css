@@ -15,7 +15,10 @@
     overflow-x: hidden;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
 .section-group {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -26,6 +29,56 @@
 .section-group>.con {
   scroll-snap-align: start;
   box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f577;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f577;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #232323;
+  border-radius: 4px;
+}
+
+.loading {
+  width: 1920px;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+  z-index: 30;
+  top: 0;
+  left: 0;
+}
+
+.loader {
+  border: 3px solid rgba(255, 255, 255, .4);
+  border-top: 3px solid #232323;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: load 1.2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+@keyframes load {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 /* 상단바 */
