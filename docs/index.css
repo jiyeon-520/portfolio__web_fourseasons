@@ -81,6 +81,11 @@ html {
   }
 }
 
+.fixed.top:hover{
+background-color: #232323;
+color:#fff;
+}
+
 /* 상단바 */
 .filter {
   top: calc(100% + 300px);
