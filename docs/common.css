@@ -9,7 +9,7 @@ body {
 }
 @font-face {
   font-family: "Constantia";
-  src: url("https://cdn.jsdelivr.net/gh/jiyeon-520/‪portfolio__web_fourseasons/docs/constan.woff");
+  src: url("https://cdn.jsdelivr.net/gh/jiyeon-520/‪portfolio__web_fourseasons/docs/constan.woff") format("woff");
 }
 @font-face {
   font-family: "GmarketSansMedium";
